@@ -23,11 +23,14 @@ export class HeroesComponent implements OnInit {
 
   selectedHero: Hero;  //property go before constructor 
 
-
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-
+  //method go after
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+  }
 
 }
